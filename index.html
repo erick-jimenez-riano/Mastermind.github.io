@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas del Juego - Mastermind Numérico</title>
+    <link rel="stylesheet" href="css/styles_reglas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔢 Mastermind Numérico 🔢</h1>
+        <p>Bienvenido al juego de lógica y estrategia donde debes adivinar el número secreto de tu oponente.</p>
+        
+        <h2>📌 ¿Cómo jugar?</h2>
+        <ul>
+            <li>Cada jugador elige un número secreto de 4 dígitos (sin que el otro lo vea).</li>
+            <li>Los números pueden tener cifras repetidas.</li>
+            <li>Los jugadores alternan turnos para adivinar el número del oponente.</li>
+            <li>Después de cada intento, recibirás pistas:</li>
+            <ul>
+                <li>✅ <strong>P (Posición Correcta)</strong>: Indica cuántos dígitos están en la posición correcta.</li>
+                <li>🔄 <strong>I (Incorrecta Posición)</strong>: Indica cuántos dígitos existen en el número secreto, pero en otra posición.</li>
+            </ul>
+            <li>El primer jugador en adivinar los 4 dígitos exactos gana la partida.</li>
+        </ul>
+
+        <h2>🎯 Ejemplo</h2>
+        <p>Si el número secreto es <strong>1233</strong> y el intento es <strong>1231</strong>:</p>
+        <ul>
+            <li>Resultado: <strong>3P 0I</strong> (porque 1, 2 y 3 están en la posición correcta, pero el otro 1 no está en el número secreto).</li>
+        </ul>
+
+        <h2>🎮 ¡A jugar!</h2>
+        <p>Ahora que conoces las reglas, presiona el botón para comenzar la partida.</p>
+        <a href="game.html" class="start-btn">Iniciar Juego</a>
+    </div>
+</body>
+</html>

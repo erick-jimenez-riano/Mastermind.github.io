@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Números Secretos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Juego de Números Secretos</h1>
+
+        <div id="setup" class="mb-4">
+            <h3>Ingrese los números secretos</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <input type="password" id="secret1" class="form-control ms-10 me-100"  placeholder="Número de Jugador 1 (0000-9999)">
+                </div>
+                <div class="col-md-4">
+                    <input type="password" id="secret2" class="form-control me-10"  placeholder="Número de Jugador 2 (0000-9999)">
+                </div>
+            </div>
+            <button class="btn btn-primary mt-2" onclick="startGame()">Iniciar Juego</button>
+        </div>
+
+        <div id="game" class="d-none">
+            <h3>Turno de Adivinar</h3>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <p class="fs-4">Jugador 1</p>
+                    <input type="text" id="guess1" class="form-control mb-2" placeholder="Intento Jugador 1">
+                </div>
+                <div class="col-md-4">
+                    <p class="fs-4">Jugador 2</p>
+                    <input type="text" id="guess2" class="form-control mb-2" placeholder="Intento Jugador 2">
+                </div>
+            </div>
+            <button class="btn btn-success" onclick="makeGuess()">Intentar</button>
+
+            <div id="feedback" class="mt-3"></div>
+
+            <!-- Tablas de Historial -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h4>Historial Jugador 1</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Intento</th>
+                                <th>Resultado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history1"></tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h4>Historial Jugador 2</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Intento</th>
+                                <th>Resultado</th>
+                            </tr>
+                        </thead>
+                        <tbody id="history2"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

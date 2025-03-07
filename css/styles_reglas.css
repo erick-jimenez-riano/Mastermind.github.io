@@ -1,0 +1,78 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Degradado oscuro misterioso */
+    color: #eee;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.8); /* Fondo semitransparente para resaltar el contenido */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Encabezados */
+h1 {
+    color: #ffcc00; /* Amarillo para destacar */
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(255, 204, 0, 0.7);
+}
+
+h2 {
+    color: #00c3ff; /* Azul neón */
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0, 195, 255, 0.7);
+}
+
+/* Párrafos y listas */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Botón para empezar el juego */
+.start-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.5);
+}
+
+.start-btn:hover {
+    background: #ffdd44;
+    box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.8);
+}
